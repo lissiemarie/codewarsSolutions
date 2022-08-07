@@ -1,0 +1,12 @@
+const fakeBin = num => {
+  num = num.split('');
+  let newNum = [];
+  for(let i = 0; i < num.length; i++) {
+    if (num[i] < 5) {
+      newNum.push(0);
+    } else {
+      newNum.push(1);
+    }
+  }
+  return newNum.join('');
+}
