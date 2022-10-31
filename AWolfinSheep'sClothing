@@ -1,0 +1,9 @@
+function warnTheSheep(queue) {
+  queue.reverse();
+  let wolfIndex = queue.indexOf('wolf');
+  if(queue[0] === 'wolf') {
+    return "Pls go away and stop eating my sheep"
+  } else {
+    return `Oi! Sheep number ${wolfIndex}! You are about to be eaten by a wolf!`
+  };
+}
